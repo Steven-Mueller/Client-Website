@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: radial-gradient(
+    circle,
+    #272727,
+    #1f1f1f,
+    #171717,
+    #0e0e0e,
+    #000000
+  ); */
+
+  /* background-image: linear-gradient(
+    to top,
+    #d95f59,
+    #d65957,
+    #d25256,
+    #cf4c54,
+    #cb4553,
+    #c54054,
+    #bf3b56,
+    #b93757,
+    #af345b,
+    #a4325e,
+    #983160,
+    #8c3061
+  ); */
+
+  /* background-image: linear-gradient(
+    to top,
+    #ffb200,
+    #fda200,
+    #fa9300,
+    #f68200,
+    #f27200,
+    #f06608,
+    #ee5911,
+    #eb4b17,
+    #ea3e22,
+    #e9302b,
+    #e71f33,
+    #e4003a
+  ); */
+
+  /* background-image: linear-gradient(
+    to top,
+    #ac7d88,
+    #a57683,
+    #9e6f7e,
+    #96687a,
+    #8f6175,
+    #895b6f,
+    #83566a,
+    #7d5064,
+    #774a5b,
+    #714453,
+    #6a3e4b,
+    #643843
+  ); */
+
+  /* background-image: linear-gradient(
+    to top,
+    #8c6a5d,
+    #865f58,
+    #7f5554,
+    #764b51,
+    #6d424e,
+    #693a4c,
+    #63324c,
+    #5d2b4c,
+    #5a224f,
+    #551952,
+    #4d1157,
+    #430a5d
+  ); */
+
+  /* background-image: linear-gradient(
+    to top,
+    #720455,
+    #690355,
+    #5f0355,
+    #550455,
+    #4b0554,
+    #410852,
+    #370a50,
+    #2d0b4d,
+    #220c48,
+    #170c43,
+    #0b0a3d,
+    #030637
+  ); */
+
+  background-image: linear-gradient(
+    to top,
+    #c7b7a3,
+    #b69c86,
+    #a6816d,
+    #966657,
+    #854c45,
+    #7b3f3d,
+    #713335,
+    #67262e,
+    #63232b,
+    #5e2129,
+    #5a1e26,
+    #561c24
+  );
+
+  color: whitesmoke;
+}

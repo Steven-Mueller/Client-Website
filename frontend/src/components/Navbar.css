@@ -1,0 +1,146 @@
+@font-face {
+  font-family: twitchy;
+  src: url(../assets/twitch-font.ttf);
+}
+
+@font-face {
+  font-family: yt;
+  src: url(../assets/yt-font.ttf);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 2.2rem;
+  width: 130px;
+  z-index: 1;
+}
+
+.link {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  color: red;
+  background-color: grey;
+  box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 12px;
+  text-align: center;
+  display: block;
+}
+
+.link:focus {
+  background-color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.twitch-text {
+  position: relative;
+  font-family: twitchy;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.twitch-text-live {
+  position: relative;
+  font-family: twitchy;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.twitch-text-live::before {
+  position: absolute;
+  left: -48px;
+  content: "LIVE";
+  -webkit-text-stroke: 0.5px #ff3c3c;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: #fdd5d5;
+  text-shadow: 0 0 5px #fa2121, 0 0 6px #fa2121, 0 0 8px #fa2121,
+    0 0 12px #ff4646, 0 0 16px #ff4646, 0 0 20px #ff4646, 0 0 25px #ff4646,
+    0 0 35px #ff4646, 2px 2px 2px rgba(206, 89, 55, 0);
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.yt-text {
+  font-family: yt;
+  -webkit-text-stroke: 0.5px black;
+}
+
+/* Feed slider */
+
+.switch {
+  position: relative;
+  width: 72px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.text-position-right {
+  text-align: right;
+  padding-top: 4px;
+  padding-right: 4px;
+}
+
+.text-position-left {
+  text-align: left;
+  padding-top: 4px;
+  padding-left: 6px;
+}
+
+.slider {
+  position: absolute;
+  background-color: grey;
+  font-size: x-small;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.5s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:checked + .slider::before {
+  transform: translateX(48px);
+}
