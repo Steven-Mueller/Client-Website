@@ -10,7 +10,7 @@ function Navbar() {
 
   async function getTwitchStatus() {
     try {
-      const response = await fetch("http://localhost:3001/");
+      const response = await fetch("https://client-website-cr9z.onrender.com");
       const data = await response.json();
       setServerData(data);
     } catch (err) {
